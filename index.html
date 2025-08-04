@@ -28,12 +28,12 @@
   </div>
 
   <!-- Mobile Menu (hidden by default) -->
-  <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+  <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden h-full w-full">
     <ul class="space-y-2 font-medium">
-      <li><a href="index.html" class="block hover:underline">Home</a></li>
-      <li><a href="About.html" class="block hover:underline">About</a></li>
-      <li><a href="volunteer.html" class="block hover:underline">Volunteer</a></li>
-      <li><a href="donate.html" class="block hover:underline">Donate</a></li>
+      <li><a href="index.html" class="p-4 block text-amber-800 hover:bg-amber-800 hover:text-white">Home</a></li>
+      <li><a href="About.html" class="block p-4 text-amber-800 hover:bg-amber-800 hover:text-white">About</a></li>
+      <li><a href="volunteer.html" class="p-4 block text-amber-800 hover:bg-amber-800 hover:text-white">Volunteer</a></li>
+      <li><a href="donate.html" class="p-4 block text-amber-800 hover:bg-amber-800 hover:text-white">Donate</a></li>
     </ul>
   </div>
 </nav>
@@ -150,5 +150,13 @@
       &copy; Basti Ki Pathshala. All rights reserved.
     </footer>
 
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
